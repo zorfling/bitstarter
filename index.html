@@ -2,46 +2,112 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>My First Bitstarter</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link type="text/css" rel="stylesheet" href="media/bootstrap-combined.no-icons.min.css">
+        <link type="text/css" rel="stylesheet" href="media/font-awesome.css">
+        <link type="text/css" rel="stylesheet" href="media/social-buttons.css">
+        <link type="text/css" rel="stylesheet" href="media/ubuntu.css">
+        <link type="text/css" rel="stylesheet" href="media/opensans.css">
+        <script src="media/jquery.js"></script>
+        <script src="media/bootstrap.js"></script>
         <style type="text/css">
-            body {
-                padding-top: 20px;
-                padding-bottom: 40px;
+            /* Large desktop */
+            @media (min-width: 980px) {
+                body {
+                    padding-top: 60px;
+                }
+
+                .linediv-l {
+                    border-right: 1px solid #fff;
+                }
+
+                .linediv-r {
+                    border-left: 1px solid #fff;
+                }
+            }
+            
+            /* Landscape phones and down */
+            @media (max-width: 480px) {
+                .copy {
+                    padding: 2.5% 10%;
+                }
+
+                .linediv-l {
+                    border-bottom: 1px solid #fff;
+                }
+
+                .linediv-r {
+                    border-top: 1px solid #fff;
+                }
             }
 
-            .container {
-                width: 960px;
+            /* All form factors */
+
+            /* Main body and headings */
+            body {
+                font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+            }
+
+            .heading, .subheading {
+                font-family: 'Ubuntu', Helvetica, Arial, sans-serif;
             }
 
             p.lead {
-                padding-top: 15px;
+                padding-top: 1.5%;
+                font-size: 24px;
+                line-height: 30px;
             }
 
-            .navigation, .pitch, .section1, .section2, .faq, .footer {
-                padding: 10px 0px 10px 0px;
+            p {
+                font-size: 18px;
+                line-height: 24px;
             }
 
-            .video, .thermometer, .order, .social {
-                border: 1px dotted;
+            /* Video pitch and Action */
+            .pitch {
+                padding: 2.5% 0%;
+            }
+
+            .order {
+                padding: 2% 0%;
+            }
+
+            .actions {
+                background-color: #343434;
+                padding: 3% 0%;
+            }
+
+            .video, .thermometer, .order, .social, .statistics {
                 text-align: center;
             }
 
-            .video {
-                /* Internal borders have 1px width, thus need to add 4x1px to 120px */
-                height: 124px;
-                line-height: 124px;
+            .statistics h3, .statistics p {
+                color: #fff;
             }
 
-            .thermometer, .order, .social {
-                /* line-height to vertically center: http://phragz.net/css/vertical-align/index.html */
-                height: 40px;
-                line-height: 40px;
+            /* Marketing Copy and Footer */
+            .copy {
+                padding-top: 2.5%;
+                padding-bottom: 2.5%;
+                text-align: justify;
             }
 
-            div.row {
-                border: 1px solid;
+            .asset {
+                padding: 2.5% 0%;
+            }
+
+            .footer {
+                color: #ccc;
+                text-align: center;
+            }
+
+            .footer p {
+                font-size: 11px;
+            }
+
+            .footer a {
+                color: #ccf;
             }
         </style>
     </head>
